@@ -1,0 +1,44 @@
+@use "../variable";
+
+.top-nav {
+  background-color: variable.$bg-black;
+  border-top: 1px solid variable.$border;
+  border-bottom: 1px solid variable.$border;
+  font-size: 0.75rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav > a {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    margin: -1px;
+    color: white;
+    border-left: 1px solid variable.$border;
+
+    &:last-child {
+      border-right: 1px solid variable.$border;
+    }
+
+    &.router-link-active {
+      background-color: variable.$bg;
+      color: variable.$menu;
+    }
+  }
+}
+
+.top-nav__marker {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  min-width: 0;
+  background-color: variable.$marker;
+  transition: all 0.3s;
+}

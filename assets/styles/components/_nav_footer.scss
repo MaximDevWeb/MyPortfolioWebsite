@@ -1,0 +1,37 @@
+@use "../variable";
+
+.footer_nav {
+  border-top: 1px solid variable.$border;
+  border-bottom: 1px solid variable.$border;
+  font-size: 0.75rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__find {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-right: 1rem;
+  }
+
+  a {
+    padding: 0.75rem 1rem;
+    border-left: 1px solid variable.$border;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:last-child {
+      border-right: 1px solid variable.$border;
+    }
+  }
+}

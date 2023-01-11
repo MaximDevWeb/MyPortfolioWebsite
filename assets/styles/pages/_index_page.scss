@@ -1,0 +1,43 @@
+@use "../variable";
+
+.index-page {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h5 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 3.875rem;
+    margin: 0.75rem 0;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0;
+    color: variable.$primary;
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+}
+
+.index-page__comments {
+  margin-top: 5rem;
+  color: variable.$secondary;
+}
+
+.index-page__project {
+  width: 40%;
+  flex: none;
+}

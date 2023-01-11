@@ -1,0 +1,25 @@
+@use "../variable";
+
+.code {
+  color: white;
+
+  pre {
+    margin: 0;
+  }
+}
+
+.code_comment {
+  color: variable.$secondary;
+}
+
+.code_key-word {
+  color: variable.$primary;
+}
+
+.code_var {
+  color: variable.$accent;
+}
+
+.code_string {
+  color: variable.$menu;
+}

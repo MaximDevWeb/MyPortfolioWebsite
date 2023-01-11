@@ -1,0 +1,13 @@
+@use "../variable";
+
+.github-link {
+  display: flex;
+  align-items: center;
+  color: white;
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-left: 0.25rem;
+  }
+}
