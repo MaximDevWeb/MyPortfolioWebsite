@@ -43,4 +43,3 @@ const code = computed(() => {
     </div>
   </div>
 </template>
-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
