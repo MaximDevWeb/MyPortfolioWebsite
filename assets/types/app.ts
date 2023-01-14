@@ -17,3 +17,10 @@ export type ProjectItem = {
   commits: number;
   link: string;
 };
+
+export type WayItem = {
+  year: number;
+  header: string;
+  description: string;
+  tags: Array<string>;
+};
