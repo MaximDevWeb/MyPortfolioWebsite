@@ -5,21 +5,21 @@ export const wayItems: Array<WayItem> = [
     year: 2014,
     header: "Начало пути",
     description:
-      "Начало пути изучение web-разработки, знакомство с CMS Joomla. Базовое изучение HTML, CSS, PHP Создание первого сайта.",
+      "Начало пути изучение web-разработки, знакомство с CMS Joomla. Базовое изучение HTML, CSS, PHP. Создание первого сайта.",
     tags: ["Joomla", "HTML", "CSS", "PHP"],
   },
   {
     year: 2015,
     header: "Знакомство с SEO",
     description:
-      "Опитмизация страниц, настройки заголовков и создание симантического ядра. Изучение устройства шаблонов Joomla",
+      "Оптимизация страниц, настройки заголовков и создание симантического ядра. Изучение устройства шаблонов Joomla",
     tags: ["SEO", "Joomla Template"],
   },
   {
     year: 2016,
     header: "Создание шаблона Joomla",
     description:
-      "Глубокое изучение устройства шаблонов Joomla. Изучение php ООП (классов, шаблонов, наследия). Изучение CSS и JS (jQuery)",
+      "Глубокое изучение устройства шаблонов Joomla. Изучение php ООП (классов, объектов, наследия). Изучение CSS и JS (jQuery)",
     tags: ["Joomla Template", "CSS", "JS", "PHP  ООП"],
   },
   {
@@ -33,7 +33,7 @@ export const wayItems: Array<WayItem> = [
     year: 2018,
     header: "Коммерческие проекты",
     description:
-      'Изучение php фреймворка Laravel.  Создание первых коммерческоих сайтов (2 из серии в 5 сайтов) для компании "Випсервис". Создание коммерчиских лендингов.',
+      'Изучение php фреймворка Laravel.  Создание первых коммерческоих сайтов (2 из серии в 5 сайтов) для компании "Випсервис". Создание коммерческих лендингов.',
     tags: ["Laravel", "Коммерческая работа"],
   },
   {
@@ -61,7 +61,7 @@ export const wayItems: Array<WayItem> = [
     year: 2022,
     header: "Знакомство с Vue3, React, Nuxt",
     description:
-      "Изучение Vue3 (Composition Api, Vite, Vitest, Penia) и Nuxt. Изучение React, Redux Toolkit.  Знакомство с TypeScript. Изучение Github Action, Css фреймворка TailWindCss. Создание для портфолио клона Яндекс.Диск - фронтенд - React, Vue; api - на Laravel",
+      "Изучение Vue3 (Composition Api, Vite, Vitest, Penia) и Nuxt. Изучение React, Redux Toolkit.  Знакомство с TypeScript. Изучение Github Action, Css фреймворка TailWindCss. Создание для портфолио сайта-клона Яндекс.Диск - фронтенд - React, Vue; api - на Laravel",
     tags: ["Vue3", "React", "Redux Toolkit", "Nuxt"],
   },
 ];
