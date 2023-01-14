@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import '@/assets/styles/app.scss';
+import "overlayscrollbars/overlayscrollbars.css";
+import "@/assets/styles/app.scss";
 </script>
 
 <template>

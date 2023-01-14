@@ -15,7 +15,9 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
+    "@highlightjs/vue-plugin": "github:highlightjs/vue-plugin",
     "luxon": "^3.2.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "overlayscrollbars-vue": "^0.5.1"
   }
 }

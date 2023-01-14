@@ -1,0 +1,12 @@
+@use "../variable";
+
+.example_code {
+  border: 1px solid variable.$border;
+  border-radius: 0.75rem;
+  width: 100%;
+  overflow: hidden;
+
+  pre {
+    margin: 0;
+  }
+}
