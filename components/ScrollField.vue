@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import pkg from "overlayscrollbars-vue/overlayscrollbars-vue.umd.js";
-const { OverlayScrollbarsComponent } = pkg;
-
+import PerfectScrollbar from "perfect-scrollbar";
 /**
  * Компонент для создания кастомной полосы прокрутки
  */
 
+const scroll = ref(null);
 /**
  * Параметры настройки библиотеки overlayScrollBars
  */
@@ -15,10 +14,14 @@ const params = reactive({
     theme: "os-theme-light",
   },
 });
+
+onMounted(() => {
+  if (scroll.value) new PerfectScrollbar(scroll.value);
+});
 </script>
 
 <template>
-  <OverlayScrollbarsComponent defer :options="params">
+  <div class="scrolling" ref="scroll">
     <slot />
-  </OverlayScrollbarsComponent>
+  </div>
 </template>

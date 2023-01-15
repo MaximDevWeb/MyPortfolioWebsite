@@ -9,7 +9,6 @@
 @use "components/project";
 @use "components/example";
 @use "components/timeline_item";
-@use "components/scrollbar";
 
 // Pages import
 @use "pages/index_page";
@@ -57,4 +56,13 @@ h3 {
   width: 1536px;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.scrolling {
+  position: relative;
+}
+
+.ps__thumb-y,
+.ps__thumb-x {
+  background-color: variable.$border;
 }
