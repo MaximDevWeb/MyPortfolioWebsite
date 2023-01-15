@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { OverlayScrollbarsComponent } from "overlayscrollbars-vue";
+import pkg from "overlayscrollbars-vue/overlayscrollbars-vue.umd.js";
+const { OverlayScrollbarsComponent } = pkg;
 
 /**
  * Компонент для создания кастомной полосы прокрутки
