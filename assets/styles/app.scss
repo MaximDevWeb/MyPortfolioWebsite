@@ -9,6 +9,7 @@
 @use "components/project";
 @use "components/example";
 @use "components/timeline_item";
+@use "components/scrollbar";
 
 // Pages import
 @use "pages/index_page";
@@ -56,8 +57,4 @@ h3 {
   width: 1536px;
   padding: 0 1rem;
   margin: 0 auto;
-}
-
-.os-theme-light.os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
-  background-color: variable.$border;
 }
