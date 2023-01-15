@@ -9,10 +9,12 @@
 @use "components/project";
 @use "components/example";
 @use "components/timeline_item";
+@use "components/input_checkbox";
 
 // Pages import
 @use "pages/index_page";
 @use "pages/about_page";
+@use "pages/skills_page";
 
 // Fonts style import
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap");

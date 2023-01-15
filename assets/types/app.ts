@@ -24,3 +24,16 @@ export type WayItem = {
   description: string;
   tags: Array<string>;
 };
+
+export type SkillItem = {
+  name: string;
+  type: SkillType;
+  image: string;
+  select: boolean;
+};
+
+export enum SkillType {
+  FRONTEND = "frontend",
+  BACKEND = "backend",
+  TOOLS = "tools",
+}
