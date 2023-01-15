@@ -1,0 +1,41 @@
+@use "../variable";
+
+.checkbox {
+  input {
+    position: fixed;
+    top: -1000px;
+    opacity: 0;
+  }
+
+  input:checked ~ label {
+    &:before {
+      background-color: variable.$marker;
+    }
+  }
+
+  label {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.875rem 0.5rem 2rem;
+    margin: 0 0.5rem;
+    border: 1px solid variable.$border;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0.875rem;
+      top: calc(0.5rem + 2px);
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background-color: variable.$border;
+    }
+
+    &:hover {
+      color: variable.$menu;
+    }
+  }
+}

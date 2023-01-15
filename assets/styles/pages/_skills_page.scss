@@ -1,0 +1,54 @@
+@use "../variable";
+
+.skills-page {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2rem auto;
+  height: 100%;
+}
+
+.skills__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem 0;
+  max-height: calc(100% - 4rem);
+}
+
+.skills__item {
+  width: 10%;
+  height: 110px;
+  padding: 0.875rem;
+  background-color: variable.$border;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 0.875rem;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: variable.$menu;
+    color: variable.$bg;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  p {
+    margin: 0.875rem 0;
+  }
+}
+
+.skills__item_inactive {
+  opacity: 0.3;
+  filter: grayscale(1);
+  pointer-events: none;
+}
