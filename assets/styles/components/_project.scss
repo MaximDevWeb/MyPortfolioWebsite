@@ -1,8 +1,9 @@
 @use "../variable";
 
 .project {
+  box-sizing: border-box;
   position: relative;
-  width: calc(100% - 2rem);
+  width: 100%;
   padding: 1rem;
   border: 1px solid variable.$border;
   border-radius: 0.75rem;
@@ -52,4 +53,72 @@
   padding: 0.25rem 0 0.25rem 2rem;
   background-color: variable.$menu;
   color: variable.$bg-black;
+}
+
+.project-item {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 2rem);
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid variable.$border;
+  border-radius: 0.75rem;
+  background-color: variable.$bg;
+}
+
+.project-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.project-item__name {
+  color: variable.$menu;
+}
+
+.project-item__commit {
+  color: variable.$secondary;
+  font-size: 0.875rem;
+}
+
+.project-item__commit {
+  color: variable.$secondary;
+  font-size: 0.875rem;
+}
+
+.project-item__code {
+  height: 100%;
+  padding: 1rem;
+  background-color: variable.$bg-black;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.project-item__links {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  img {
+    height: 20px;
+    width: 20px;
+    margin-right: 0.25rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 0.875rem;
+    margin-right: 1rem;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

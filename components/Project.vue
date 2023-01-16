@@ -18,7 +18,7 @@ const code = computed(() => {
   let result = "";
 
   for (let [key, value] of Object.entries(props.repo)) {
-    if (key === "link") continue;
+    if (key === "link" || key === "github_link") continue;
     if (Array.isArray(value)) value = value.join(", ");
 
     result += `\n  @${key}: ${value}`;

@@ -1,0 +1,26 @@
+@use "../variable";
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2rem auto;
+  height: calc(100% - 4rem);
+
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.project__wrap {
+  height: 100%;
+  padding-right: 2rem;
+}
+
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+}
