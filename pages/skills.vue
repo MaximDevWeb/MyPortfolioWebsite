@@ -13,6 +13,8 @@ skills.sort(() => (Math.random() > 0.5 ? 1 : -1));
 
 <template>
   <main class="skills-page">
+    <h1>&lt;My skills&gt;</h1>
+
     <div class="skills__nav">
       <input-checkbox
         label="_frontend"
@@ -31,16 +33,18 @@ skills.sort(() => (Math.random() > 0.5 ? 1 : -1));
       />
     </div>
 
-    <scroll-field class="skills__list">
-      <div
-        class="skills__item"
-        :class="{ skills__item_inactive: !skillsFilter.includes(skill.type) }"
-        v-for="skill in skills"
-        :key="skill.name"
-      >
-        <img :src="`/images/skills/${skill.image}`" :alt="skill.name" />
-        <p>{{ skill.name }}</p>
-      </div>
-    </scroll-field>
+    <client-only>
+      <scroll-field class="skills__list">
+        <div
+          class="skills__item"
+          :class="{ skills__item_inactive: !skillsFilter.includes(skill.type) }"
+          v-for="skill in skills"
+          :key="skill.name"
+        >
+          <img :src="`/images/skills/${skill.image}`" :alt="skill.name" />
+          <p>{{ skill.name }}</p>
+        </div>
+      </scroll-field>
+    </client-only>
   </main>
 </template>

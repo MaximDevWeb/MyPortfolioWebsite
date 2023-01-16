@@ -1,5 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { projects } from "~/models/projects";
+</script>
 
 <template>
-  <h2>project</h2>
+  <main class="project-page">
+    <h1>&lt;My project&gt;</h1>
+
+    <scroll-field class="project__wrap">
+      <div class="project__list">
+        <project-item v-for="project in projects" :repo="project" />
+      </div>
+    </scroll-field>
+  </main>
 </template>

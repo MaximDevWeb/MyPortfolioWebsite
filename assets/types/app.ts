@@ -15,7 +15,8 @@ export type ProjectItem = {
   frameworks: Array<string>;
   languages: Array<string>;
   commits: number;
-  link: string;
+  link?: string;
+  github_link?: string;
 };
 
 export type WayItem = {
