@@ -38,3 +38,9 @@ export enum SkillType {
   BACKEND = "backend",
   TOOLS = "tools",
 }
+
+export type MessageType = {
+  name: string;
+  email: string;
+  message: string;
+};
