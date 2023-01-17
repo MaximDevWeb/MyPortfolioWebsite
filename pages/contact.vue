@@ -5,6 +5,13 @@ import logo from "~/assets/images/logo.svg";
 import { MessageType } from "assets/types/app";
 import Message from "~/utils/sendEmail";
 
+/**
+ * Задаем заголовки страницы
+ */
+useHead({
+  title: "Контакты",
+});
+
 const emailSanding = ref(false);
 
 const data = reactive<MessageType>({

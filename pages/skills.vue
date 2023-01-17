@@ -2,6 +2,13 @@
 import { SkillType } from "assets/types/app";
 import { skills } from "~/models/skills";
 
+/**
+ * Задаем заголовки страницы
+ */
+useHead({
+  title: "Мои навыки",
+});
+
 const skillsFilter = ref<Array<string>>([
   SkillType.BACKEND,
   SkillType.FRONTEND,

@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import { wayItems } from "@/models/way";
+
+/**
+ * Задаем заголовки страницы
+ */
+useHead({
+  title: "Обо мне",
+});
 </script>
 
 <template>

@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import { projects } from "~/models/projects";
+
+/**
+ * Задаем заголовки страницы
+ */
+useHead({
+  title: "Мои проекты",
+});
 </script>
 
 <template>
