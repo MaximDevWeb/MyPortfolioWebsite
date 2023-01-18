@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MenuItem } from "@/assets/types/app";
+import { menuItems } from "~/models/menu";
 
 /**
  * Компонент верхней навигационной панели
@@ -7,17 +7,6 @@ import { MenuItem } from "@/assets/types/app";
 
 const marker = ref<HTMLElement | null>(null);
 const activeItem = ref<HTMLElement | null>(null);
-
-/**
- * Список элементов меню
- */
-const menuItems: Array<MenuItem> = [
-  { path: "/", label: "_hello" },
-  { path: "/about", label: "_about_me" },
-  { path: "/skills", label: "_skills" },
-  { path: "/project", label: "_project" },
-  { path: "/contact", label: "_contact" },
-];
 
 /**
  * Следим за изменением активного элемента

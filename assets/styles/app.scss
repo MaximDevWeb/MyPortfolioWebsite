@@ -70,3 +70,22 @@ h3 {
 .ps__thumb-x {
   background-color: variable.$border;
 }
+
+.zoom-enter-active,
+.zoom-leave-active,
+.zoom-enter-active,
+.zoom-leave-active {
+  transition: all 0.5s;
+}
+.zoom-enter-from {
+  position: fixed;
+  opacity: 0;
+  transform: scale(1.5);
+  filter: blur(50px);
+}
+.zoom-leave-to {
+  position: fixed;
+  opacity: 0;
+  transform: scale(0.5);
+  filter: blur(50px);
+}
