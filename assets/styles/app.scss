@@ -1,6 +1,9 @@
 // Variable import
 @use "variable";
 
+// Normalize import
+@use "normalize.css";
+
 // Components import
 @use "components/nav_top";
 @use "components/nav_footer";
@@ -20,9 +23,6 @@
 
 // Fonts style import
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap");
-
-// Normalize import
-@import "normalize.css";
 
 * {
   font-family: "Roboto Mono", monospace;
@@ -66,6 +66,10 @@ h3 {
   position: relative;
 }
 
+.mobile {
+  display: none;
+}
+
 .ps__thumb-y,
 .ps__thumb-x {
   background-color: variable.$border;
@@ -89,3 +93,6 @@ h3 {
   transform: scale(0.5);
   filter: blur(50px);
 }
+
+// Media import
+@import "media";

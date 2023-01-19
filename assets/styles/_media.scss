@@ -1,0 +1,129 @@
+@use "variable";
+
+@media screen and (max-width: 1536px) {
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .code {
+    line-height: 1.4;
+  }
+
+  // Index page media
+  .index-page {
+    width: 90%;
+  }
+
+  // Project page media
+  .project-page {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  // Index page media
+  .index-page {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .index-page__project {
+    display: none;
+  }
+
+  // Skills page media
+  .skills__item {
+    width: 15%;
+  }
+
+  .skills__item {
+    height: 100px;
+  }
+
+  // Project page media
+  .project-page {
+    width: 100%;
+  }
+
+  .project__wrap {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  // Project page media
+  .project-item {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    height: calc(100% - 96px);
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  // Index page media
+  .index-page {
+    width: 100%;
+  }
+
+  // Skills page media
+  .skills-page {
+    width: 100%;
+  }
+
+  .skills__item {
+    width: 20%;
+  }
+
+  // Top menu media
+  .top-nav {
+    height: 3rem;
+  }
+
+  .top-nav__desktop {
+    display: none;
+  }
+
+  .top-nav__btn {
+    display: block;
+    width: 34px;
+  }
+
+  .top-nav__mobile {
+    display: flex;
+  }
+
+  // Footer media
+  .footer_nav {
+    .timer {
+      display: none;
+    }
+  }
+
+  .footer__find {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer__message {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  // Skills page media
+  .skills__item {
+    width: 30%;
+  }
+}

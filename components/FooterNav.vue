@@ -18,7 +18,7 @@ const githubItems: Array<GithubItem> = [
   <div class="footer_nav">
     <div class="container">
       <div class="footer__find">
-        <span>find me in:</span>
+        <span class="footer__message">find me in:</span>
 
         <github-link
           v-for="item in githubItems"
