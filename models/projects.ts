@@ -13,8 +13,7 @@ export const thisProject: ProjectItem = {
 export const projects: Array<ProjectItem> = [
   {
     name: "DiskReact",
-    description: `Фронтенд часть на React 
-                для клона Яндекс.Диска`,
+    description: "Фронтенд часть на React для клона Яндекс.Диска",
     created_year: "2022",
     frameworks: ["React"],
     languages: ["React", "TypeScript", "SCSS"],
@@ -24,8 +23,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "DiskVue",
-    description: `Фронтенд часть на Vue 
-                для клона Яндекс.Диска`,
+    description: "Фронтенд часть на Vue для клона Яндекс.Диска",
     created_year: "2022",
     frameworks: ["Vue"],
     languages: ["Vue", "TypeScript", "SCSS"],
@@ -35,8 +33,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "DiskApi",
-    description: `Бакенд часть на Laravel 
-                для клона Яндекс.Диска`,
+    description: "Бакенд часть на Laravel для клона Яндекс.Диска",
     created_year: "2022",
     frameworks: ["Laravel"],
     languages: ["Php", "Blade"],
@@ -45,8 +42,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "ChatFrontVue",
-    description: `Фронтенд часть на 
-                Vue для сайта чата`,
+    description: "Фронтенд часть на Vue для сайта чата",
     created_year: "2022",
     frameworks: ["Vue"],
     languages: ["Vue", "TypeScript", "SCSS"],
@@ -55,8 +51,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "ChatAPI",
-    description: `Бакенд часть на 
-                Laravel для сайта чата`,
+    description: "Бакенд часть на Laravel для сайта чата",
     created_year: "2022",
     frameworks: ["Laravel"],
     languages: ["Php"],
@@ -65,8 +60,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "Velo_mir",
-    description: `Wordpress сайт для 
-                магазина "Веломир34"`,
+    description: 'Wordpress сайт для магазина "Веломир34"',
     created_year: "2021",
     frameworks: ["Wordpress"],
     languages: ["Php", "JavaScript"],
@@ -76,8 +70,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "Velo_mir",
-    description: `Сайт для пицерии 
-                "Ёpizza" на Vue`,
+    description: 'Сайт для пицерии "Ёpizza" на Vue',
     created_year: "2021",
     frameworks: ["Vue"],
     languages: ["Vue", "JavaScript", "Sass"],
@@ -87,9 +80,8 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "dvery",
-    description: `Сайт для магазина 
-                дверей "Випсервис" 
-                на собственном фреймворке`,
+    description:
+      'Сайт для магазина дверей "Випсервис" на собственном фреймворке',
     created_year: "2018",
     frameworks: ["Собственный фреймворк"],
     languages: ["Php", "JavaScript", "Sass"],
@@ -99,8 +91,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "mebel",
-    description: `Ландинг по корпусной 
-                мебели для "Випсервис"`,
+    description: 'Ландинг по корпусной мебели для "Випсервис"',
     created_year: "2019",
     frameworks: ["Без фреймворка"],
     languages: ["Php", "JavaScript", "Sass"],
@@ -109,9 +100,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "potolok",
-    description: `Сайт для магазина 
-                натяжных потолков 
-                "Випсервис" на Laravel`,
+    description: 'Сайт для магазина натяжных потолков "Випсервис" на Laravel',
     created_year: "2019",
     frameworks: ["Laravel"],
     languages: ["Php", "JavaScript", "Sass"],
@@ -120,8 +109,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "okna",
-    description: `Ландинг по остеклению 
-                для "Випсервис"`,
+    description: 'Ландинг по остеклению для "Випсервис"',
     created_year: "2018",
     frameworks: ["Laravel"],
     languages: ["Php", "JavaScript", "Sass"],
@@ -130,9 +118,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "split",
-    description: `Сайт для магазина 
-                сплит-систем "Випсервис"
-                на Laravel`,
+    description: 'Сайт для магазина сплит-систем "Випсервис" на Laravel',
     created_year: "2019",
     frameworks: ["Laravel"],
     languages: ["Php", "JavaScript", "Sass"],
@@ -141,8 +127,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "mebel",
-    description: `Ландинг для базы 
-                отдыха "Золотая рыбка"`,
+    description: 'Ландинг для базы отдыха "Золотая рыбка"',
     created_year: "2016",
     frameworks: ["Без фреймворка"],
     languages: ["Php", "JavaScript", "Sass"],

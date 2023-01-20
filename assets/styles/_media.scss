@@ -57,6 +57,11 @@
     width: calc(100% - 1rem);
     margin: 0.5rem;
   }
+
+  // About page media
+  .about-page__content {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -84,6 +89,11 @@
 
   .skills__item {
     width: 20%;
+  }
+
+  // Contact page media
+  .contact-page {
+    width: 100%;
   }
 
   // Top menu media
@@ -119,11 +129,52 @@
   .footer__message {
     display: none;
   }
+
+  // About page media
+  .about-page {
+    width: 100%;
+  }
+
+  .about-page__timeline {
+    padding-left: 0;
+  }
+
+  .timeline {
+    margin: 0;
+  }
+
+  .timeline-marker {
+    left: 70px;
+  }
+
+  .timeline__date {
+    font-size: 1.5rem;
+  }
+
+  // Contact page media
+  .contact-page__form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact-page__message {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
   // Skills page media
   .skills__item {
     width: 30%;
+  }
+
+  // Contact page media
+  .contact-page__dynamic,
+  .contact-page__sanding {
+    margin-top: 1rem;
+  }
+
+  .contact-page__form {
+    width: 100%;
   }
 }

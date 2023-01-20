@@ -25,7 +25,7 @@ const code = computed(() => {
     if (itemIgnore.includes(key)) continue;
     if (Array.isArray(value)) value = value.join(", ");
 
-    result += `\n  @${key}: ${value}`;
+    result += `<p>@${key}: <span>${value}</span></p>`;
   }
 
   return result;
@@ -40,7 +40,7 @@ const code = computed(() => {
     </div>
 
     <div class="project-item__code code">
-      <pre class="code_comment">{{ `/** ${code} \n  */` }}</pre>
+      <div class="code_comment" v-html="`/*${code}*/`"></div>
     </div>
 
     <div class="project-item__links">

@@ -1,6 +1,7 @@
 @use "../variable";
 
 .about-page {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   height: 100%;
@@ -14,8 +15,17 @@
 }
 
 .about-page__content {
-  pre {
-    margin: 0;
+  width: 50%;
+  flex: none;
+
+  p {
+    display: flex;
+    margin: 0.3rem 0;
+
+    span:first-child {
+      flex: none;
+      width: 40px;
+    }
   }
 }
 
