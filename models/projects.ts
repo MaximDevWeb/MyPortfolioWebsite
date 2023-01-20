@@ -13,8 +13,7 @@ export const thisProject: ProjectItem = {
 export const projects: Array<ProjectItem> = [
   {
     name: "DiskReact",
-    description: `Фронтенд часть на React 
-                для клона Яндекс.Диска`,
+    description: "Фронтенд часть на React для клона Яндекс.Диска",
     created_year: "2022",
     frameworks: ["React"],
     languages: ["React", "TypeScript", "SCSS"],
@@ -24,8 +23,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "DiskVue",
-    description: `Фронтенд часть на Vue 
-                для клона Яндекс.Диска`,
+    description: "Фронтенд часть на Vue для клона Яндекс.Диска",
     created_year: "2022",
     frameworks: ["Vue"],
     languages: ["Vue", "TypeScript", "SCSS"],
@@ -35,8 +33,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "DiskApi",
-    description: `Бакенд часть на Laravel 
-                для клона Яндекс.Диска`,
+    description: "Бакенд часть на Laravel для клона Яндекс.Диска",
     created_year: "2022",
     frameworks: ["Laravel"],
     languages: ["Php", "Blade"],
@@ -83,8 +80,8 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "dvery",
-    description: `Сайт для магазина дверей 
-                "Випсервис" на собственном фреймворке`,
+    description:
+      'Сайт для магазина дверей "Випсервис" на собственном фреймворке',
     created_year: "2018",
     frameworks: ["Собственный фреймворк"],
     languages: ["Php", "JavaScript", "Sass"],
@@ -103,8 +100,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "potolok",
-    description: `Сайт для магазина натяжных
-                потолков "Випсервис" на Laravel`,
+    description: 'Сайт для магазина натяжных потолков "Випсервис" на Laravel',
     created_year: "2019",
     frameworks: ["Laravel"],
     languages: ["Php", "JavaScript", "Sass"],
@@ -122,8 +118,7 @@ export const projects: Array<ProjectItem> = [
   },
   {
     name: "split",
-    description: `Сайт для магазина сплит-систем
-                "Випсервис" на Laravel`,
+    description: 'Сайт для магазина сплит-систем "Випсервис" на Laravel',
     created_year: "2019",
     frameworks: ["Laravel"],
     languages: ["Php", "JavaScript", "Sass"],

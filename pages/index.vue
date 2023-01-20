@@ -21,7 +21,10 @@ import { thisProject } from "~/models/projects";
             href="https://github.com/MaximDevWeb/ChatFrontVue"
             class="code_string"
           >
-            "https://github.com/MaximDevWeb/ChatFrontVue"
+            <span class="desktop">
+              "https://github.com/MaximDevWeb/ChatFrontVue"
+            </span>
+            <span class="mobile">env.THIS_PROJECT</span>
           </a>
         </p>
       </div>
