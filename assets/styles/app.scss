@@ -70,6 +70,11 @@ h3 {
   display: none;
 }
 
+.inactive {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 .ps__thumb-y,
 .ps__thumb-x {
   background-color: variable.$border;

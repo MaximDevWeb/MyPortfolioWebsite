@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import email from "~/assets/images/email_icon.svg";
 import phone from "~/assets/images/phone_icon.svg";
-import logo from "~/assets/images/logo.svg";
 import { MessageType } from "assets/types/app";
-import Message from "~/utils/sendEmail";
+import MessagePreview from "~/components/MessagePreview.vue";
+import { sendMessage } from "~/utils/sendEmail";
 
 /**
  * Задаем заголовки страницы
@@ -13,6 +13,7 @@ useHead({
 });
 
 const emailSanding = ref(false);
+const sanding = ref(false);
 
 const data = reactive<MessageType>({
   name: "",
@@ -30,16 +31,20 @@ const cleanError = (field: "name" | "email" | "message") => {
   errors[field] = false;
 };
 
-const submitMessage = () => {
+const submitMessage = async () => {
   errors.name = !data.name.trim();
   errors.email = !data.email.trim();
   errors.message = !data.message.trim();
 
   if (data.name.trim() && data.email.trim() && data.message.trim()) {
-    const message = new Message(data);
-    message.send().then(() => {
+    sanding.value = true;
+
+    const response = await sendMessage(data);
+    sanding.value = false;
+
+    if (response.ok) {
       emailSanding.value = true;
-    });
+    }
   }
 };
 
@@ -129,39 +134,17 @@ const sendNew = () => {
           </div>
 
           <div class="contact-page__button">
-            <button @click.prevent="submitMessage">submit-message</button>
+            <button
+              @click.prevent="submitMessage"
+              :class="{ inactive: sanding }"
+            >
+              {{ sanding ? "sanding" : "submit-message" }}
+            </button>
           </div>
         </form>
       </div>
 
-      <div class="contact-page__message">
-        <h1>&lt;Your message&gt;</h1>
-
-        <div class="message__wrap">
-          <img :src="logo" alt="Site logo" />
-          <h3 class="message__header">maxim-dev</h3>
-
-          <p>
-            Добрый день, меня зовут
-            <span>{{ data.name || "${user.name}" }}</span
-            >!
-          </p>
-          <p>
-            Меня заинтересовало Ваше резюме. Хотелось уточнить некоторые данные:
-          </p>
-          <p>{{ data.message || "${user.message}" }}</p>
-
-          <p>
-            Ждем Ваш ответ на почтовый ящик:
-            <span>{{ data.email || "${user.email}" }}</span>
-          </p>
-
-          <div class="message__footer">
-            <a href="https://portfolio.maxim-dev.ru">portfolio.maxim-dev.ru</a>
-            <p>{{ new Date().getFullYear() }} г.</p>
-          </div>
-        </div>
-      </div>
+      <message-preview :data="data" />
     </div>
   </main>
 </template>
