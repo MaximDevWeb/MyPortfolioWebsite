@@ -37,7 +37,7 @@ const code = computed(() => {
     <div class="project__code code">
       <pre class="code_comment">{{ `/** ${code} \n  */` }}</pre>
 
-      <a :href="repo.link" class="project__link" target="_blank">
+      <a :href="repo.github_link" class="project__link" target="_blank">
         see this project
       </a>
     </div>

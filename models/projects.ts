@@ -1,13 +1,13 @@
 import { ProjectItem } from "assets/types/app";
 
 export const thisProject: ProjectItem = {
-  name: "nal-frontend",
+  name: "MyPortfolioWebsite",
   description: "My portfolio website",
   created_year: "2023",
   frameworks: ["Nuxt"],
   languages: ["Vue", "TypeScript", "SCSS"],
-  commits: 9,
-  github_link: "https://github.com/MaximDevWeb/nal-frontend",
+  commits: 30,
+  github_link: "https://github.com/MaximDevWeb/MyPortfolioWebsite",
 };
 
 export const projects: Array<ProjectItem> = [

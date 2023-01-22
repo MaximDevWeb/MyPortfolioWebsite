@@ -18,11 +18,11 @@ import { thisProject } from "~/models/projects";
           <span class="code_var"> githubLink</span> =
 
           <a
-            href="https://github.com/MaximDevWeb/ChatFrontVue"
+            href="https://github.com/MaximDevWeb/MyPortfolioWebsite"
             class="code_string"
           >
             <span class="desktop">
-              "https://github.com/MaximDevWeb/ChatFrontVue"
+              "https://github.com/MaximDevWeb/MyPortfolioWebsite"
             </span>
             <span class="mobile">env.THIS_PROJECT</span>
           </a>
