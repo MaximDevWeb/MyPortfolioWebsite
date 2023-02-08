@@ -61,7 +61,7 @@ export const wayItems: Array<WayItem> = [
     year: 2022,
     header: "Знакомство с Vue3, React, Nuxt",
     description:
-      "Изучение Vue3 (Composition Api, Vite, Vitest, Penia) и Nuxt. Изучение React, Redux Toolkit.  Знакомство с TypeScript. Изучение Github Action, Css фреймворка TailWindCss. Создание для портфолио сайта-клона Яндекс.Диск - фронтенд - React, Vue; api - на Laravel",
+      "Изучение Vue3 (Composition Api, Vite, Vitest, Pinia) и Nuxt. Изучение React, Redux Toolkit.  Знакомство с TypeScript. Изучение Github Action, Css фреймворка TailWindCss. Создание для портфолио сайта-клона Яндекс.Диск - фронтенд - React, Vue; api - на Laravel",
     tags: ["Vue3", "React", "Redux Toolkit", "Nuxt"],
   },
 ];

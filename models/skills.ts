@@ -80,9 +80,9 @@ export const skills: Array<SkillItem> = [
     select: true,
   },
   {
-    name: "Penia",
+    name: "Pinia",
     type: SkillType.FRONTEND,
-    image: "penia.svg",
+    image: "pinia.svg",
     select: true,
   },
   {
