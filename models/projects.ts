@@ -12,6 +12,26 @@ export const thisProject: ProjectItem = {
 
 export const projects: Array<ProjectItem> = [
   {
+    name: "Auto api home",
+    description:
+      "Создание api сервиса для получения данных о марках, моделях, поколениях и кратких характеристиках автомобилей",
+    created_year: "2023",
+    frameworks: ["Vue3", "Laravel"],
+    languages: ["Php", "JavaScript"],
+    commits: 330,
+    link: "https://auto.api-home.ru/",
+  },
+  {
+    name: "Velo_mir",
+    description: "Редизайн сайта Веломир",
+    created_year: "2023",
+    frameworks: ["Wordpress"],
+    languages: ["Php", "JavaScript"],
+    commits: 177,
+    link: "https://velomir34.ru/",
+    github_link: "https://github.com/Makkssimka/Velo_mir",
+  },
+  {
     name: "DiskReact",
     description: "Фронтенд часть на React для клона Яндекс.Диска",
     created_year: "2022",
