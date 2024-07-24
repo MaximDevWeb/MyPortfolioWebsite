@@ -64,4 +64,19 @@ export const wayItems: Array<WayItem> = [
       "Изучение Vue3 (Composition Api, Vite, Vitest, Pinia) и Nuxt. Изучение React, Redux Toolkit.  Знакомство с TypeScript. Изучение Github Action, Css фреймворка TailWindCss. Создание для портфолио сайта-клона Яндекс.Диск - фронтенд - React, Vue; api - на Laravel",
     tags: ["Vue3", "React", "Redux Toolkit", "Nuxt"],
   },
+  {
+    year: 2023,
+    header:
+      "Полное освоение Vue3 Composition API, знакомство с библиотеками компонентов для Vue",
+    description:
+      "Освоил Vue3 с Composition API подходом. Сделал редизайн и оптимизацию сайта Веломир34. Начал создания проекта AutoAPI",
+    tags: ["Vue3", "Composition API", "Laravel"],
+  },
+  {
+    year: 2024,
+    header: "Изучение различных фронтенд архитектур. Изучение FSD",
+    description:
+      "Занялся изучением построение архитектуры фронтенд приложений. Выбрал для изучения FSD. Закончил создание проекта AutoAPI",
+    tags: ["Vue3", "Laravel", "FSD"],
+  },
 ];
